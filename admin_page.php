@@ -112,14 +112,14 @@
                                         <button type="button" class="btn btn-link  btn-sm btn-outline-info dropdown-toggle" data-mdb-toggle="dropdown" aria-expanded="false"><i class="fas fa-filter"></i>
                                             Filter
                                         </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">All</a></li>
-                                                <li><a class="dropdown-item" href="#">This Month</a></li>
-                                                <li><a class="dropdown-item" href="#">This Year</a></li>
+                                        <ul class="dropdown-menu bg-glass">
+                                            <li><a class="dropdown-item text-info" href="#">All</a></li>
+                                                <li><a class="dropdown-item text-info" href="#">This Month</a></li>
+                                                <li><a class="dropdown-item text-info" href="#">This Year</a></li>
                                                 <li><hr class="dropdown-divider" /></li>
-                                                <li><a class="dropdown-item" href="#">Doctors</a></li>
-                                                <li><a class="dropdown-item" href="#">Councillors</a></li>
-                                                <li><a class="dropdown-item" href="#">Patient</a></li>
+                                                <li><a class="dropdown-item text-info" href="#">Doctors</a></li>
+                                                <li><a class="dropdown-item text-info" href="#">Councillors</a></li>
+                                                <li><a class="dropdown-item text-info" href="#">Patient</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -151,14 +151,14 @@
                                             <button type="button" class="btn btn-link  btn-sm btn-outline-info dropdown-toggle" data-mdb-toggle="dropdown" aria-expanded="false"><i class="fas fa-filter"></i>
                                                 Filter
                                             </button>
-                                            <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">All</a></li>
-                                                <li><a class="dropdown-item" href="#">This Month</a></li>
-                                                <li><a class="dropdown-item" href="#">This Year</a></li>
+                                            <ul class="dropdown-menu bg-glass" style="font-size: 14px">
+                                                <li><a class="dropdown-item text-info" href="#">All</a></li>
+                                                <li><a class="dropdown-item text-info" href="#">This Month</a></li>
+                                                <li><a class="dropdown-item text-info" href="#">This Year</a></li>
                                                 <li><hr class="dropdown-divider" /></li>
-                                                <li><a class="dropdown-item" href="#">Doctors</a></li>
-                                                <li><a class="dropdown-item" href="#">Councillors</a></li>
-                                                <li><a class="dropdown-item" href="#">Patient</a></li>
+                                                <li><a class="dropdown-item text-info" href="#">Doctors</a></li>
+                                                <li><a class="dropdown-item text-info" href="#">Councillors</a></li>
+                                                <li><a class="dropdown-item text-info" href="#">Patient</a></li>
                                             </ul>
                                         </div>
                                     </div>
