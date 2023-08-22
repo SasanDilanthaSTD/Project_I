@@ -128,7 +128,7 @@
                             <!--Card body-->
                             <div class="p-4">
                                 <div class="card-body">
-                                    <canvas id="myChart"></canvas>
+                                    <canvas id="myChart" style="width: 90vw; height: 40vh"></canvas>
                                 </div>
                             </div>
                         </div>
@@ -167,7 +167,7 @@
                             <!--Card body-->
                             <div class="p-4">
                                 <div class="card-body">
-                                    <canvas id="barChart"></canvas>
+                                    <canvas id="barChart" style="width: 90vw; height: 40vh"></canvas>
                                 </div>
                             </div>
                     </div>

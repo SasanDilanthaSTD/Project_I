@@ -39,6 +39,7 @@ const myChart = new Chart(ctx,{
     type: 'line',
     data: data,
     options: {
+        maintainAspectRatio: false,
         legend:{
             display: false,
         },
@@ -130,6 +131,7 @@ const barChart = new Chart(ctx_2,{
     type: 'bar',
     data: B_data,
     options: {
+        maintainAspectRatio: false,
         legend:{
             display: false,
         },
