@@ -2,7 +2,7 @@
     <header>
         <div class="image-text">
                 <span class="image">
-                    <img src="../accest/use_image/logo.png" alt="LOGO">
+                    <img src="../assets/use_image/logo.png" alt="LOGO">
                 </span>
 
         <i class='fas fa-chevron-right toggle '></i>
@@ -65,7 +65,7 @@
         <div class="bottom-content">
             <li class="">
                 <a href="#">
-                    <div class="d-flex align-items-center"><img src="../accest/use_image/nipa.jpg" alt="" style="width: 45px; height: 45px" class="rounded-circle"/></div>
+                    <div class="d-flex align-items-center"><img src="../assets/use_image/nipa.jpg" alt="" style="width: 45px; height: 45px" class="rounded-circle"/></div>
                     <i class='fas fa-arrow-right-from-bracket icon' ></i>
                     <span class="text nav-text">Logout</span>
                 </a>
