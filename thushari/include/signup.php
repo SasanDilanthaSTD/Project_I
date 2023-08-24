@@ -14,11 +14,13 @@ if (isset($_POST["submit"])) {
 
     include "../classes/DBConnector.php";
     include "../classes/signup.classes.php";
-    include "../classes/signup-contr.classes.php";
+    include "../classes/signup-control.classes.php";
     $signup = new SignupContr ($fname,$lname,$uname,$email,$pw,$rpw,$position); 
 
     
-    header("location:../index.html");
+$signup ->signupuser();
+
+header("location: ../index.html?error=none");
 
 
 
