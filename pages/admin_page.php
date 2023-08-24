@@ -6,17 +6,17 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ADMIN DASHBORD</title>
-    <?php include_once '../accest/links/MDB/css/mdb_css.php';?>
+    <?php include_once '../assets/links/MDB/css/mdb_css.php';?>
 
-    <link rel="stylesheet" href="../accest/css/main.css">
-    <link rel="stylesheet" href="../accest/css/sub_1.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/sub_1.css">
 
 
 
 </head>
 <body>
 <!--Navigaion Bar-->
-<?php include_once '../accest/components/side_navbar.php';?>
+<?php include_once '../assets/components/side_navbar.php';?>
 
 <section class="home">
     <div class="container pt-5">
@@ -192,7 +192,7 @@
                 <tr class="tb-row">
                     <td>
                         <div class="d-flex align-items-center">
-                            <img src="../accest/use_image/nipa.jpg" alt="" style="width: 45px; height: 45px" class="rounded-circle"/>
+                            <img src="../assets/use_image/nipa.jpg" alt="" style="width: 45px; height: 45px" class="rounded-circle"/>
                             <div class="ms-3">
                                 <p class="fw-bold text-info mb-1">Dr. Nipuna Deshan</p>
                                 <p class="text-muted mb-0">nipu@gmail.com</p>
@@ -217,7 +217,7 @@
                 <tr class="tb-row">
                     <td>
                         <div class="d-flex align-items-center">
-                            <img src="../accest/use_image/senu.jpg" class="rounded-circle" alt="" style="width: 45px; height: 45px"/>
+                            <img src="../assets/use_image/senu.jpg" class="rounded-circle" alt="" style="width: 45px; height: 45px"/>
                             <div class="ms-3">
                                 <p class="fw-bold mb-1 text-info">Mr. Senura Adithya</p>
                                 <p class="text-muted mb-0">senu@gmail.com</p>
@@ -242,7 +242,7 @@
                 <tr class="tb-row">
                     <td>
                         <div class="d-flex align-items-center">
-                            <img src="../accest/use_image/thusha.jpg" class="rounded-circle" alt="" style="width: 45px; height: 45px"/>
+                            <img src="../assets/use_image/thusha.jpg" class="rounded-circle" alt="" style="width: 45px; height: 45px"/>
                             <div class="ms-3">
                                 <p class="fw-bold mb-1 text-info">Dr. Thushari Senewirathne</p>
                                 <p class="text-muted mb-0">thushari@gmail.com</p>
@@ -267,7 +267,7 @@
                 <tr class="tb-row">
                     <td>
                         <div class="d-flex align-items-center">
-                            <img src="../accest/use_image/isur.jpg" alt="" style="width: 45px; height: 45px" class="rounded-circle"/>
+                            <img src="../assets/use_image/isur.jpg" alt="" style="width: 45px; height: 45px" class="rounded-circle"/>
                             <div class="ms-3">
                                 <p class="fw-bold mb-1 text-info">Mr. Isuru Widanapathirana</p>
                                 <p class="text-muted mb-0">dvp@gmail.com</p>
@@ -297,10 +297,10 @@
     </div>
 </section>
 
-    <?php include_once 'accest/links/MDB/js/mdb_js.php';?>
+    <?php include_once 'assets/links/MDB/js/mdb_js.php';?>
     <!-- Link to Chart.js library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
-    <script src="../accest/js/sub_1.js"></script>
-    <script src="../accest/js/main.js"></script>
+    <script src="../assets/js/sub_1.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

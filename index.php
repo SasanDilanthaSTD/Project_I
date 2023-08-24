@@ -6,9 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ADMIN DASHBORD</title>
-    <?php include_once 'accest/links/MDB/css/mdb_css.php';?>
+    <?php include_once 'assets/links/MDB/css/mdb_css.php';?>
 
-    <link rel="stylesheet" href="accest/css/sub_1.css">
+    <link rel="stylesheet" href="assets/css/sub_1.css">
 
 
 
@@ -25,10 +25,10 @@
 
 
 
-<?php include_once 'accest/links/MDB/js/mdb_js.php';?>
+<?php include_once 'assets/links/MDB/js/mdb_js.php';?>
 <!-- Link to Chart.js library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
-<script src="accest/js/sub_1.js"></script>
-<script src="accest/js/main.js"></script>
+<script src="assets/js/sub_1.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
