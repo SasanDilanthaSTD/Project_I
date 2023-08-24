@@ -28,7 +28,7 @@ class Signup extends DBConnector{
     }
 
     $resultCheck;
-    if ($stmt-> rowCount() 0) {
+    if ($stmt-> rowCount() >0) {
         $resultCheck= false;
         # code...
     }

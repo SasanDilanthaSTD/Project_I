@@ -5,11 +5,12 @@
         try {
             $uname = "root";
             $pw = "";
-            $con= new PDO('mysql:localhost;dbname=mhs',$uname,$pw);
+            $con= new PDO('mysql:host=localhost;dbname=mhs',$uname,$pw);
             return $con;
         } catch (PDOException $e) {
-            print "Error!: ".$e->getMessage() . "<br>"
+            print "Error!: ".$e->getMessage() . "<br>";
             die();
+            
         }
     }
  }
