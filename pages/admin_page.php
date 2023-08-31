@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ADMIN DASHBORD</title>
     <?php include_once '../assets/links/MDB/css/mdb_css.php';?>
-
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/sub_1.css">
 
