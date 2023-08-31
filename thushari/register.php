@@ -33,10 +33,10 @@
 						<div class="row mb-3">
 							<div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="text" name="fname"
 									placeholder="First Name" required="" style="background: #ababab;"></div>
-							<div class="col-sm-6"><input class="form-control form-control-user" type="text"
+							<div class="col-sm-6"><input class="form-control form-control-user" type="text" name="lname"
 									placeholder="Last Name" required="" style="background: #ababab;"></div>
 						</div><!-- End: Names --><!-- Start: Username -->
-						<div class="mb-3"><input class="form-control form-control-user" type="text" name="lname"
+						<div class="mb-3"><input class="form-control form-control-user" type="text" name="uname"
 								placeholder="Username" required="" style="background: #ababab;"></div>
 						<!-- End: Username --><!-- Start: Email -->
 						<div class="mb-3"><input class="form-control form-control-user" type="email" id="email" name="email"
@@ -51,20 +51,19 @@
 									style="background: #ababab;"></div>
 						</div><!-- End: Password -->
 						<div style="margin-bottom: 10px;"><!-- Start: 1 Row 3 Columns -->
-							<div class="container">
-								<div class="row" name="position">
+							<div class="container" >
+								<div class="row"  >
 									<div class="col-md-4">
-										<div class="form-check"><input class="form-check-input" type="radio" 
-												id="formCheck-1"><label class="form-check-label"
-												for="formCheck-1">Patient</label></div>
+										<div class="form-check"><input class="form-check-input" type="radio" name="p" id="formCheck-1">
+										<label class="form-check-label" for="formCheck-1">Patient</label></div>
 									</div>
 									<div class="col-md-4">
-										<div class="form-check"><input class="form-check-input" type="radio" 
+										<div class="form-check"><input class="form-check-input" type="radio" name="p"
 												id="formCheck-2"><label class="form-check-label"
 												for="formCheck-2">Counselor</label></div>
 									</div>
 									<div class="col-md-4">
-										<div class="form-check"><input class="form-check-input" type="radio"
+										<div class="form-check"><input class="form-check-input" type="radio" name="p"
 												id="formCheck-3"><label class="form-check-label"
 												for="formCheck-3">Doctor</label></div>
 									</div>

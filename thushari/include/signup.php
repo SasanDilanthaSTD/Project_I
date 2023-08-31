@@ -1,6 +1,6 @@
 <?php 
-
-if (isset($_POST["submit"])) {
+if($_SERVER['REQUEST_METHOD'] === 'POST'){
+    if (isset($_POST["submit"])) {
 
     //grabbing the data
     $fname = $_POST["fname"];
@@ -12,22 +12,19 @@ if (isset($_POST["submit"])) {
     $position=$_POST["p"];
 
 
+    
+
     include "../classes/DBConnector.php";
-    include "../classes/signup.classes.php";
-    include "../classes/signup-control.classes.php";
-    $signup = new SignupContr ($fname,$lname,$uname,$email,$pw,$rpw,$position); 
+    include "../classes/signupProcess.php";
+    include "../classes/SignupControler.php";
 
-    
-$signup ->signupuser();
-
-header("location: ../index.html?error=none");
+    $signup = new SignupProcess($fname,$lname,$uname,$email,$pw,$rpw,$position); 
+   // echo "work";
+    $signup ->signupuser();
 
 
 
-    
-    
+    header("location: ../test.php?error=none");  
+    }
 
-    
-
-    
 }

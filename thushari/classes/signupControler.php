@@ -2,14 +2,14 @@
 
 class Signup extends DBConnector{
 
- protected function setuser( $uname,$email,$fname,$lname,$pw)   {
+ protected function setuser( $uname,$email,$fname,$lname,$pw,$position)   {
     $stmt =$this->connect()->prepare('INSERT INTO user(firstname,lastname,username,password) VALUES (?,?,?,?)');
 
     $hashedpwd = password_hash($pw, PASSWORD_DEFAULT);
 
-    if (!$stmt->execute(array($uname,$email,$fname,$lname,$hashedpwd))) {
+    if (!$stmt->execute(array($uname,$email,$fname,$lname,$hashedpwd,$position))) {
         $stmt = null;
-        header("location: ../index.html?error=stmtfailed");
+        header("location: ../register.php?error=stmtfailed");
         exit();
     }
     $stmt=null;
@@ -27,7 +27,7 @@ class Signup extends DBConnector{
         exit();
     }
 
-    $resultCheck;
+   
     if ($stmt-> rowCount() >0) {
         $resultCheck= false;
         # code...
