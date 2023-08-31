@@ -5,7 +5,7 @@
         <div class="modal-content" style="width: auto">
             <div class="modal-header">
                 <div class="d-flex justify-content-centered">
-                    <h5 class="modal-title fw-bold txt-gradient" id="exampleModalLabel">Test Your Mind Status</h5>
+                    <h5 class="modal-title fw-bold txt-gradient" id="exampleModalLabel">Test Your Mind Status (PSS)</h5>
                 </div>
                 <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
             </div>
@@ -31,10 +31,11 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <div class="note note-warning mb-3">
+                <div class="note note-info mb-3">
                     <strong>Note :</strong> <small>N - Never |  AN - Almost Never | S - Sometimes | FO - Fairly Often | VO - Very Often</small>
                 </div>
-                <button type="button" class="btn btn-primary btn-floating"><i class="fas fa-angle-right"></i></button>
+                <button type="submit" name="btbNext" class="btn btn-primary btn-floating"><i class="fas fa-angle-right"></i></button>
+                <button type="submit" name="btnFinish" class="btn btn-primary btn-rounded"><i class="fas fa-check"></i> finish</button>
             </div>
         </div>
     </div>
