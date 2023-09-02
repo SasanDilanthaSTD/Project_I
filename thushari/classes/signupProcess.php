@@ -65,18 +65,7 @@ class SignupProcess{
         return $result;
     }
     
-    //  private function invaliduname(){
-    //     $result;
-    //     if(!preg_match("/^[a-zA-Z0-9]*$/", $this->uname))
-    //     {
-    //         $result = false;
-    //     }
-    //     else
-    //     {
-    //         $result = true;
-    //     }
-    //     return $result;
-    // }
+
     
      private function invaliemail(){
         
