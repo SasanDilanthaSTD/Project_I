@@ -1,6 +1,6 @@
 <?php
 
-class UserRegistrationAndAuthentication extends Customer{
+class UserRegistrationAndAuthentication extends User{
     public function register(){
 
     }

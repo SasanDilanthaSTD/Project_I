@@ -1,6 +1,6 @@
 <?php
 
-class RegisteredUser extends Customer{
+class RegisteredUser extends User{
     private $statues;
 
 }

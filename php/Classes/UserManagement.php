@@ -1,6 +1,6 @@
 <?php
 
-class UserManagement extends Customer{
+class UserManagement extends User{
     public function manageUserProfile(){
 
     }

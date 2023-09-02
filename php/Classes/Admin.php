@@ -1,6 +1,6 @@
 <?php
 
-class Admin extends Customer{
+class Admin extends User{
     private $adminID;
 
 }

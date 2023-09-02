@@ -1,6 +1,6 @@
 <?php
 
-class SecureMassagingAndCommunication extends Customer
+class SecureMassagingAndCommunication extends User
 {
     public function sendSecureMassage(){
 

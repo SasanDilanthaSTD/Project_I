@@ -1,6 +1,6 @@
 <?php
 
-class Visitor extends Customer {
+class Visitor extends User {
     private $email;
 
 }
