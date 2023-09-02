@@ -82,23 +82,41 @@
             </div>
         </div>
     </div>
-    <form>
+
         <div class="row profile-row">
             <div class="col-md-4 relative">
+                <form action="../php/Code/editProfile.php" method="POST" enctype="multipart/form-data">
                 <div class="avatar">
                     <div
                         class="avatar-bg center"
-                        style="background: rgb(255, 255, 255)"
+                        style="background: rgb(255, 255, 255); margin-bottom: 10px"
                     ></div>
                 </div>
                 <input
                     class="form-control form-control"
                     type="file"
-                    name="avatar-file"
+                    name="image" accept="image/*"
                 />
+                <button
+                        class="btn btn-primary form-btn loginbtn"
+                        data-bss-hover-animate="pulse"
+                        type="submit"
+                        style="border-style: none; margin-top: 10px "
+                >
+                    SAVE</button>
+                </form>
+                <?php
+                if(isset($_GET['success'])){
+                    if($_GET['success'] == "1"){
+                        ?>
+                        <h4>Picture Upload Successfully</h4>
+                        <?php
+                    }
+                }
+                ?>
             </div>
             <div class="col-md-8">
-                <form action="" method="POST">
+
                 <h1>Profile</h1>
                 <hr />
                 <div class="row">
@@ -187,10 +205,10 @@
                         </button>
                     </div>
                 </div>
-                </form>
+
             </div>
         </div>
-    </form>
+
 </div>
 <!-- End: Profile Edit Form --><!-- Start: footer -->
 <div>
