@@ -8,12 +8,7 @@ if (isset($_GET)){
         }
     }
 }
-/*
-if (isset($_COOKIE['unreg_id'])){
-    $cookie = true;
-}else{
-    $cookie = false;
-}*/
+
 if (isset($_COOKIE['unreg'])){
     $cookie = true;
 }else{
