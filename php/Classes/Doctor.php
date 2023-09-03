@@ -1,6 +1,7 @@
 <?php
 
-class Doctor extends RegisteredUser{
+class Doctor extends RegisteredUser
+{
     private $doctorID;
     private $dDescription;
 }

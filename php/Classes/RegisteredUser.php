@@ -1,6 +1,7 @@
 <?php
 
-class RegisteredUser extends User{
+class RegisteredUser extends User
+{
     private $statues;
 
 }
