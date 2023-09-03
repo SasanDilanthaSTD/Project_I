@@ -1,13 +1,19 @@
 <?php
 
-class UserRegistrationAndAuthentication extends User{
-    public function register(){
+class UserRegistrationAndAuthentication extends User
+{
+    public function register()
+    {
 
     }
-    public function login(){
+
+    public function login()
+    {
 
     }
-    public function logout(){
+
+    public function logout()
+    {
 
     }
 }

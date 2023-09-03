@@ -1,10 +1,14 @@
 <?php
 
-class UserManagement extends User{
-    public function manageUserProfile(){
+class UserManagement extends User
+{
+    public function manageUserProfile()
+    {
 
     }
-    public function managePatientInfo(){
+
+    public function managePatientInfo()
+    {
 
     }
 }
