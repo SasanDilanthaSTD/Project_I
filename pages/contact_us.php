@@ -12,8 +12,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kavivanar&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Stick+No+Bills&amp;display=swap">
+    <script src="../assets/js/contact_us.js" type="text/javascript"></script>
     <link rel="stylesheet" href="../assets/css/contact_us.css">
 </head>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+    (function () {
+        emailjs.init("fYPcLvIPnNJkxzpZu");
+    })();
+</script>
 <body style="background: rgb(184,241,255);"><!-- Start: nav bar -->
 <div><!-- Start: Navbar Right Links -->
     <nav class="navbar navbar-expand-md bg-body py-3">
@@ -85,7 +94,7 @@
             </div>
             <div class="col-md-6 col-lg-5 col-xl-4">
                 <div>
-                    <form class="p-3 p-xl-4" method="post"><!-- Start: Success Example -->
+                    <div class="p-3 p-xl-4" ><!-- Start: Success Example -->
                         <div class="mb-3"><input class="form-control" type="text" id="name-1" name="name"
                                                  placeholder="Name"></div><!-- End: Success Example -->
                         <!-- Start: Error Example -->
@@ -94,12 +103,13 @@
                         <div class="mb-3"><textarea class="form-control" id="message-1" name="message" rows="6"
                                                     placeholder="Message"></textarea></div>
                         <div>
-                            <button class="btn btn-primary d-block w-100" type="submit"
+                            <button onclick="ContactUsMail()"  class="btn btn-primary d-block w-100" type="submit"
                                     style="box-shadow: 0px 0px 20px rgba(255,255,255,0.21);border: 1px solid var(--bs-btn-active-color) ;">
                                 Send
                             </button>
+                            <div id="success-message" style="color: white;text-align: center;margin-top: 10px"></div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
