@@ -32,8 +32,10 @@
             <textarea name="message" id="message" cols="30" rows="10"></textarea>
         </p>
         <p>
+
             <button onclick="SendMail()">Send</button>
         </p>
 </div>
+
 </body>
 </html>
