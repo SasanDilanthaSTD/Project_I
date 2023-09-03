@@ -14,24 +14,32 @@
 <body style="background: url(&quot;../assets/use_image/plants-2560x1439.png&quot;) right / cover no-repeat, rgb(63,70,79);"><!-- Start: nav bar -->
     <div><!-- Start: Navbar Right Links -->
         <nav class="navbar navbar-expand-md bg-body py-3">
-            <div class="container"><a class="navbar-brand d-flex align-items-center" href="#" style="padding-bottom: 0px;margin-top: 0px;padding-top: 0px;"><img src="assets/img/Untitled-1.png" style="width: 109px;"></a></div>
+            <div class="container"><a class="navbar-brand d-flex align-items-center" href="#" style="padding-bottom: 0px;margin-top: 0px;padding-top: 0px;"><img src="../assets/use_image/Untitled-1.png" style="width: 109px;"></a></div>
         </nav><!-- End: Navbar Right Links -->
     </div><!-- End: nav bar --><!-- Start: form -->
     <div style="padding-top: 50px;"><!-- Start: Google Style Login -->
         <div class="login-card" style="background: #ffffffb0;margin-top: 0px;margin-bottom: 50px;border-radius: 13px;">
-            <div style="text-align: center;"><img src="../assets/use_image/Untitled-1.png" style="width: 200px;"></div>
+            <div style="text-align: center;"><img src="../assets/use_image/logo.png" style="width: 200px;"></div>
             <p class="profile-name-card"> </p>
-            <form class="form-signin" action="../php/Code/Login.php" method="post"><span class="reauth-email"> </span><input class="form-control" type="email" name="email" id="inputEmail" required="" placeholder="Email address" autofocus="" style="background: #ababab;">
+            <form class="form-signin" action="../php/Code/signin.php" method="post"><span class="reauth-email"> </span><input class="form-control" type="email" name="email" id="inputEmail" required="" placeholder="Email address" autofocus="" style="background: #ababab;">
             <input class="form-control" type="password" name="password" id="inputPassword" required="" placeholder="Password" style="background: rgb(171,171,171);">
                 <div class="checkbox">
-                    <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1" style="box-shadow: 0px 0px 1px;border-width: 1px;"><label class="form-check-label" for="formCheck-1"><span style="color: rgb(0, 0, 0);">Remember me</span></label></div>
                 </div><button class="btn btn-primary d-block btn-user w-100 reg-btn" data-bss-hover-animate="pulse" name="submit" id="submitBtn" type="submit" style="border-style: none;"><strong>Sign in</strong></button>
             </form>
-            <div class="row">
-                <div class="col"><a class="forgot-password" href="#"><span style="color: rgb(0, 0, 0);">Forgot your password?</span></a></div>
+            <div style="text-align: center; color: white; background-color: red; border-radius: 7px; width: 80%;margin-left: 25px;margin-right: 25px">
+                <?php
+                if (isset($_GET["error"])) {
+                    if ($_GET["error"] == 1) {
+                        echo "Email or Passwords incorrect";
+                    }
+                }
+                ?>
             </div>
             <div class="row">
-                <div class="col"><a class="forgot-password" href="#"><span style="color: rgb(0, 0, 0);">Create Account...</span></a></div>
+                <div class="col"><a class="forgot-password" href="#" style="text-decoration: none"><span style="color: rgb(0, 0, 0);">Forgot your password?</span></a></div>
+            </div>
+            <div class="row">
+                <div class="col"><a class="forgot-password" href="register.php" style="text-decoration: none"><span style="color: rgb(0, 0, 0);">Create Account...</span></a></div>
             </div>
         </div><!-- End: Google Style Login -->
     </div><!-- End: form --><!-- Start: footer -->
