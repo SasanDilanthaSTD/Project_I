@@ -1,4 +1,7 @@
 <?php
+namespace Classes;
+use PDO;
+use PDOException;
 
 class DB_Conector
 {
