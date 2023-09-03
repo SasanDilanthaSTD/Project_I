@@ -1,10 +1,14 @@
 <?php
 
-class NotificationsAndReminders extends RegisteredUser{
-    public function sendNotification(){
+class NotificationsAndReminders extends RegisteredUser
+{
+    public function sendNotification()
+    {
 
     }
-    public function sendReminder(){
+
+    public function sendReminder()
+    {
 
     }
 }

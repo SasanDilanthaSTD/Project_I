@@ -2,11 +2,13 @@
 
 class SecureMassagingAndCommunication extends User
 {
-    public function sendSecureMassage(){
+    public function sendSecureMassage()
+    {
 
     }
 
-    public function encryptCommunication(){
+    public function encryptCommunication()
+    {
 
     }
 }

@@ -1,10 +1,14 @@
 <?php
 
-class PaymentGatewayIntegration extends RegisteredUser{
-    public function processPayment(){
+class PaymentGatewayIntegration extends RegisteredUser
+{
+    public function processPayment()
+    {
 
     }
-    public function supportMultiplePaymentMethod(){
+
+    public function supportMultiplePaymentMethod()
+    {
 
     }
 }

@@ -1,10 +1,14 @@
 <?php
 
-class MentalHealthAssesment extends RegisteredUser{
-    public function conductAssesment(){
+class MentalHealthAssesment extends RegisteredUser
+{
+    public function conductAssesment()
+    {
 
     }
-    public function generateRecommendation(){
+
+    public function generateRecommendation()
+    {
 
     }
 }
