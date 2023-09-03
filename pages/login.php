@@ -25,7 +25,7 @@
             <input class="form-control" type="password" name="password" id="inputPassword" required="" placeholder="Password" style="background: rgb(171,171,171);">
                 <div class="checkbox">
                     <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1" style="box-shadow: 0px 0px 1px;border-width: 1px;"><label class="form-check-label" for="formCheck-1"><span style="color: rgb(0, 0, 0);">Remember me</span></label></div>
-                </div><button class="btn btn-primary d-block btn-user w-100 reg-btn" data-bss-hover-animate="pulse" id="submitBtn" type="submit" style="border-style: none;"><strong>Sign in</strong></button>
+                </div><button class="btn btn-primary d-block btn-user w-100 reg-btn" data-bss-hover-animate="pulse" name="submit" id="submitBtn" type="submit" style="border-style: none;"><strong>Sign in</strong></button>
             </form>
             <div class="row">
                 <div class="col"><a class="forgot-password" href="#"><span style="color: rgb(0, 0, 0);">Forgot your password?</span></a></div>

@@ -7,15 +7,29 @@ class User{
     private $userName;
     private $profilePhoto;
     private $password;
+    private $email;  
+    private $rpassword;
+    private $position;
 
-    public function __construct($userID, $firstName, $lastName, $userName, $profilePhoto, $password) {
-        $this->userID = $userID;
+    // public function __construct($userID, $firstName, $lastName, $userName, $profilePhoto, $password) {
+    //     $this->userID = $userID;
+    //     $this->firstName = $firstName;
+    //     $this->lastName = $lastName;
+    //     $this->userName = $userName;
+    //     $this->profilePhoto = $profilePhoto;
+    //     $this->password = $password;
+    // }
+
+    public function __construct($firstName, $lastName, $userName, $email, $password, $rpassword, $position) {
         $this->firstName = $firstName;
         $this->lastName = $lastName;
         $this->userName = $userName;
-        $this->profilePhoto = $profilePhoto;
+        $this->email = $email;
         $this->password = $password;
+        $this->rpassword = $rpassword;
+        $this->position = $position;
     }
+
     public function getUserID() {
         return $this->userID;
     }

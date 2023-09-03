@@ -57,7 +57,7 @@
 
 							<div id="pdf-input" style="display: none;">
 								<label for="pdf-file">Upload PDF:</label>
-								<input type="file" id="pdf-file">
+								<input type="file" id="pdf-file" name="cv">
 							</div>
 
 							<script>
