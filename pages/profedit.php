@@ -1,4 +1,12 @@
 <?php
+session_start();
+
+if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
+    include "db_conn.php";
+    include 'php/User.php';
+
+    $user = getUserById($_SESSION['id'], $conn);
+}
 ?>
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="en">
@@ -46,6 +54,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
     />
     <link rel="stylesheet" href="../assets/css/profedit.css" />
+
 </head>
 <body style="background: rgb(230, 230, 230)">
 <!-- Start: nav bar -->
@@ -159,10 +168,10 @@
                 <!--                name="email"-->
                 <!--              />-->
                 <!--            </div>-->
-                <div class="row">
-                    <div class="col-sm-12 col-md-6">
+<!--                <div class="row">-->
+<!--                    <div class="col-sm-12 col-md-6">-->
                         <div class="form-group mb-3">
-                            <label class="form-label">Current Password </label
+                            <label class="form-label">Change Password </label
                             ><input
                                 class="form-control"
                                 type="password"
@@ -171,19 +180,19 @@
                                 required=""
                             />
                         </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div class="form-group mb-3">
-                            <label class="form-label">New Password</label
-                            ><input
-                                class="form-control"
-                                type="password"
-                                name="confirmpass"
-                                autocomplete="off"
-                                required=""
-                            />
-                        </div>
-                    </div>
+<!--                    </div>-->
+<!--                    <div class="col-sm-12 col-md-6">-->
+<!--                        <div class="form-group mb-3">-->
+<!--                            <label class="form-label">New Password</label-->
+<!--                            ><input-->
+<!--                                class="form-control"-->
+<!--                                type="password"-->
+<!--                                name="confirmpass"-->
+<!--                                autocomplete="off"-->
+<!--                                required=""-->
+<!--                            />-->
+<!--                        </div>-->
+<!--                    </div>-->
                 </div>
                 <hr />
                 <div class="row">
@@ -195,7 +204,9 @@
                             style="border-style: none"
                         >
                             SAVE</button
-                        ><button
+                        >
+                        <a href="userprofile.php">
+                        <button
                             class="btn btn-danger form-btn loginbtn"
                             data-bss-hover-animate="pulse"
                             type="reset"
@@ -203,6 +214,7 @@
                         >
                             CANCEL
                         </button>
+                        </a>
                     </div>
                 </div>
 
