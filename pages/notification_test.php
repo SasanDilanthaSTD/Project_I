@@ -37,9 +37,10 @@
             <textarea name="message" id="message" cols="30" rows="10"></textarea>
         </p>
         <p>
-            <button type="submit" name="submit">Send</button>
+
+            <button onclick="SendMail()">Send</button>
         </p>
-    </form>
-</div><!-- container onclick="SendMail()"-->
+</div>
+
 </body>
 </html>
