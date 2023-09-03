@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 
 if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
@@ -7,6 +8,7 @@ if (isset($_SESSION['id']) && isset($_SESSION['fname'])) {
 
     $user = getUserById($_SESSION['id'], $conn);
 }
+
 ?>
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="en">
