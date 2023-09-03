@@ -149,6 +149,6 @@
             <p class="mb-0">Copyright © 2023 Mental Health Service</p></div>
     </footer><!-- End: Footer Basic --></div><!-- End: footer -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/script.min.js"></script>
+<script src="../assets/js/contactUs.js"></script>
 </body>
 </html>

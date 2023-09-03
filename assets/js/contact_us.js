@@ -8,7 +8,7 @@ function ContactUsMail() {
     emailjs.send("service_hahniw8", "template_ygxlz0j", params).then(function (res) {
             if (res.status === 200) {
                 var successMessage = document.getElementById("success-message");
-                successMessage.innerHTML = "Email sent successfully!";
+                successMessage.innerHTML = "Your feedback sent successfully!";
             }
         }
     )
