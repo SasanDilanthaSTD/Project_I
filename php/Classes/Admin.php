@@ -2,7 +2,8 @@
 namespace Classes;
 use Classes\DB_Conector;
 
-class Admin extends User{
+class Admin extends User
+{
     private $adminID;
 
     public function isLoggedIn(){

@@ -5,7 +5,7 @@
                     <img src="../assets/use_image/logo.png" alt="LOGO">
                 </span>
 
-        <i class='fas fa-chevron-right toggle '></i>
+            <i class='fas fa-chevron-right toggle '></i>
     </header>
 
     <div class="menu-bar">
@@ -19,14 +19,14 @@
             <ul class="menu-links">
                 <li class="nav-link">
                     <a href="#">
-                        <i class='fas fa-house icon' ></i>
+                        <i class='fas fa-house icon'></i>
                         <span class="text nav-text">Dashboard</span>
                     </a>
                 </li>
 
                 <li class="nav-link">
                     <a href="#">
-                        <i class='fas fa-chart-column icon' ></i>
+                        <i class='fas fa-chart-column icon'></i>
                         <span class="text nav-text">Revenue</span>
                     </a>
                 </li>
@@ -40,21 +40,21 @@
 
                 <li class="nav-link">
                     <a href="#">
-                        <i class='fas fa-chart-pie icon' ></i>
+                        <i class='fas fa-chart-pie icon'></i>
                         <span class="text nav-text">Analytics</span>
                     </a>
                 </li>
 
                 <li class="nav-link">
                     <a href="#">
-                        <i class='fas fa-comments icon' ></i>
+                        <i class='fas fa-comments icon'></i>
                         <span class="text nav-text">Messages</span>
                     </a>
                 </li>
 
                 <li class="nav-link">
                     <a href="#">
-                        <i class='fas fa-wallet icon' ></i>
+                        <i class='fas fa-wallet icon'></i>
                         <span class="text nav-text">Wallets</span>
                     </a>
                 </li>
@@ -66,24 +66,11 @@
             <li class="">
                 <a href="#">
                     <div class="d-flex align-items-center"><img src="../assets/use_image/nipa.jpg" alt="" style="width: 45px; height: 45px" class="rounded-circle"/></div>
-                    <i class='fas fa-arrow-right-from-bracket icon' ></i>
+                    <i class='fas fa-arrow-right-from-bracket icon'></i>
                     <span class="text nav-text">Logout</span>
                 </a>
 
             </li>
-
-            <li class="mode">
-                <div class="sun-moon">
-                    <i class='fas fa-moon icon moon'></i>
-                    <i class='fas fa-sun icon sun'></i>
-                </div>
-                <span class="mode-text text">Dark mode</span>
-
-                <div class="toggle-switch">
-                    <span class="switch"></span>
-                </div>
-            </li>
-
         </div>
     </div>
 

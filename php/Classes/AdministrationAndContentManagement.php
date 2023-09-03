@@ -1,13 +1,19 @@
 <?php
 
-class AdministrationAndContentManagement extends RegisteredUser{
-    public function manageUserAccounts(){
+class AdministrationAndContentManagement extends RegisteredUser
+{
+    public function manageUserAccounts()
+    {
 
     }
-    public function updateContent(){
+
+    public function updateContent()
+    {
 
     }
-    public function monitorActivity(){
+
+    public function monitorActivity()
+    {
 
     }
 }

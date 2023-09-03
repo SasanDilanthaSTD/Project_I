@@ -1,13 +1,19 @@
 <?php
 
-class ResourceLibrary extends RegisteredUser{
-    public function organizeResources(){
+class ResourceLibrary extends RegisteredUser
+{
+    public function organizeResources()
+    {
 
     }
-    public function accessResources(){
+
+    public function accessResources()
+    {
 
     }
-    public function provideToolsAndTechniques(){
+
+    public function provideToolsAndTechniques()
+    {
 
     }
 }

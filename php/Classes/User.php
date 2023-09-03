@@ -40,50 +40,61 @@ class User{
         return $this->userID;
     }
 
-    public function getFirstName() {
+    public function setUserID($userID)
+    {
+        $this->userID = $userID;
+    }
+
+    public function getFirstName()
+    {
         return $this->firstName;
     }
 
-    public function getLastName() {
+    public function setFirstName($firstName)
+    {
+        $this->firstName = $firstName;
+    }
+
+    public function getLastName()
+    {
         return $this->lastName;
     }
 
-    public function getUserName() {
-        return $this->userName;
-    }
-
-    public function getProfilePhoto() {
-        return $this->profilePhoto;
-    }
-
-    public function getPassword() {
-        return $this->password;
+    public function setLastName($lastName)
+    {
+        $this->lastName = $lastName;
     }
     public function getunregUserID() {
         return $this->unregUserID;
     }
 
-    public function setUserID($userID) {
-        $this->userID = $userID;
+    public function getUserName()
+    {
+        return $this->userName;
     }
 
-    public function setFirstName($firstName) {
-        $this->firstName = $firstName;
-    }
-
-    public function setLastName($lastName) {
-        $this->lastName = $lastName;
-    }
-
-    public function setUserName($userName) {
+    public function setUserName($userName)
+    {
         $this->userName = $userName;
     }
 
-    public function setProfilePhoto($profilePhoto) {
+    public function getProfilePhoto()
+    {
+        return $this->profilePhoto;
+    }
+
+    public function setProfilePhoto($profilePhoto)
+    {
         $this->profilePhoto = $profilePhoto;
     }
 
-    public function setPassword($password) {
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+    public function setPassword($password)
+    {
         $this->password = $password;
     }
 

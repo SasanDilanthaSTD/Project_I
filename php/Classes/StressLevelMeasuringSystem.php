@@ -1,16 +1,24 @@
 <?php
 
-class StressLevelMeasuringSystem extends Admin{
-    public function measureStressLevel(){
+class StressLevelMeasuringSystem extends Admin
+{
+    public function measureStressLevel()
+    {
 
     }
-    public function conductAssesment(){
+
+    public function conductAssesment()
+    {
 
     }
-    public function generateReport(){
+
+    public function generateReport()
+    {
 
     }
-    public function accessResourceLibrary(){
+
+    public function accessResourceLibrary()
+    {
 
     }
 }
