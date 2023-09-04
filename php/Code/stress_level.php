@@ -2,6 +2,8 @@
 //session_status();
 //---------------------------- stro quaction in array -------------------------------------------------------------
 #import  dbconnector class
+use Classes\DB_Conector;
+
 require "../Classes/DB_Conector.php";
 require "../Classes/stress_level.php";
 // create connection

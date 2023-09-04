@@ -34,9 +34,7 @@ if (isset($_COOKIE['unreg'])){
 <body>
 <div class="container mt-5">
     <?php
-     if ($cookie){
-         echo $_COOKIE['unreg_id'];
-     }else{
+     if (!$cookie){
          include "pages/stress_level_1.php" ;
      }
     ?>

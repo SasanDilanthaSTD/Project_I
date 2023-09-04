@@ -1,3 +1,15 @@
+<?php
+use Classes\DB_Conector;
+
+require "../php/Classes/DB_Conector.php";
+$con = DB_Conector::get_connection();
+
+$sql_table = "SELECT u.user_id, u.firstname, u.lastname, u.profile_photo, u.email, t.approval, t.description FROM user u INNER JOIN doctor d ON u.user_id = d.user_id INNER JOIN therapist t ON d.therapist_id = t.therapist_id";
+$pstmt = $con->prepare($sql_table);
+$pstmt->execute();
+$rs = $pstmt->fetchAll(PDO::FETCH_OBJ);
+
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -207,25 +219,28 @@
                     </tr>
                     </thead>
                     <tbody>
+                    <?php
+                    foreach ($rs as $user){
+
+
+                    ?>
                     <tr class="tb-row">
                         <td>
                             <div class="d-flex align-items-center">
-                                <img src="../assets/use_image/nipa.jpg" alt="" style="width: 45px; height: 45px"
+                                <img src="../assets/<?php echo $user->profile_photo; ?>" alt="" style="width: 45px; height: 45px"
                                      class="rounded-circle"/>
                                 <div class="ms-3">
-                                    <p class="fw-bold text-info mb-1">Dr. Nipuna Deshan</p>
-                                    <p class="text-muted mb-0">nipu@gmail.com</p>
+                                    <p class="fw-bold text-info mb-1"><?php echo $user->firstname .' '.$user->lastname; ?></p>
+                                    <p class="text-muted mb-0"><?php echo $user->email?></p>
                                 </div>
                             </div>
                         </td>
                         <td>
-                            <span class="badge badge-success rounded-pill d-inline">Accept</span>
+                            <span class="badge badge-success rounded-pill d-inline"><?php echo $user->approval?></span>
                         </td>
                         <td class="text-info">Doctor</td>
                         <td>
-                            <p class="text-muted mb-0">
-
-                            </p>
+                            <p class="text-muted mb-0"><?php echo $user->description?></p>
                         </td>
                         <td>
                             <button type="button" class="btn btn-link  btn-sm btn-rounded btn-outline-info">
@@ -233,85 +248,7 @@
                             </button>
                         </td>
                     </tr>
-                    <tr class="tb-row">
-                        <td>
-                            <div class="d-flex align-items-center">
-                                <img src="../assets/use_image/senu.jpg" class="rounded-circle" alt=""
-                                     style="width: 45px; height: 45px"/>
-                                <div class="ms-3">
-                                    <p class="fw-bold mb-1 text-info">Mr. Senura Adithya</p>
-                                    <p class="text-muted mb-0">senu@gmail.com</p>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="badge badge-warning rounded-pill d-inline">Pending</span>
-                        </td>
-                        <td class="text-info">Councillor</td>
-                        <td>
-                            <p class="text-muted mb-0">
-
-                            </p>
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-link  btn-sm btn-rounded btn-outline-info">
-                                Check
-                            </button>
-                        </td>
-                    </tr>
-                    <tr class="tb-row">
-                        <td>
-                            <div class="d-flex align-items-center">
-                                <img src="../assets/use_image/thusha.jpg" class="rounded-circle" alt=""
-                                     style="width: 45px; height: 45px"/>
-                                <div class="ms-3">
-                                    <p class="fw-bold mb-1 text-info">Dr. Thushari Senewirathne</p>
-                                    <p class="text-muted mb-0">thushari@gmail.com</p>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="badge badge-warning rounded-pill d-inline">Pending</span>
-                        </td>
-                        <td class="text-info">Councillor</td>
-                        <td>
-                            <p class="text-muted mb-0">
-
-                            </p>
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-link  btn-sm btn-rounded btn-outline-info"
-                                    data-mdb-ripple-color="dark">
-                                Check
-                            </button>
-                        </td>
-                    </tr>
-                    <tr class="tb-row">
-                        <td>
-                            <div class="d-flex align-items-center">
-                                <img src="../assets/use_image/isur.jpg" alt="" style="width: 45px; height: 45px"
-                                     class="rounded-circle"/>
-                                <div class="ms-3">
-                                    <p class="fw-bold mb-1 text-info">Mr. Isuru Widanapathirana</p>
-                                    <p class="text-muted mb-0">dvp@gmail.com</p>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <span class="badge badge-danger rounded-pill d-inline">Reject</span>
-                        </td>
-                        <td class="text-info">Councillor</td>
-                        <td>
-                            <p class="text-muted mb-0">
-
-                            </p>
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-link  btn-sm btn-rounded btn-outline-info">
-                                Check
-                            </button>
-                        </td>
-                    </tr>
+                    <?php } ?>
                     </tbody>
                 </table>
             </div>
