@@ -1,4 +1,7 @@
 <?php
+
+use Classes\DB_Conector;
+
 require "../php/Classes/DB_Conector.php";
 $con = DB_Conector::get_connection();
 
